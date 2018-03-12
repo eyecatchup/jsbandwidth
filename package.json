@@ -1,54 +1,45 @@
 {
-	"name": "jsbandwidth",
-	"license": "MIT",
-	"version": "1.1.2",
-	"description": "JsBandwidth - the JavaScript net speed test",
-	"author": 
-	{
-		"name": "Adrian Ber",
-		"email": "beradrian@yahoo.com"
-	},
-
-	"repository": 
-	{
-		"type": "git",
-		"url": "https://github.com/beradrian/jsbandwidth.git"
-	},
-
-	"main": "index.js",
-	"dependencies": 
-	{
-		"extend": "latest",
-                "xhrpromise": "latest",
-                "babel-cli": "latest",
-                "babel-plugin-add-module-exports": "latest",
-                "babel-preset-es2015": "latest"
-	},
-
-	"devDependencies": 
-	{
-		"angular": ">=1.4.7",
-		"angular-mocks": "1.4.7",
-		"jasmine": "latest",
-		"jasmine-ajax": "latest",
-		"jasmine-core": "latest",
-		"js-quantities": "latest",
-		"karma": "latest",
-		"karma-babel-preprocessor": "latest",
-		"karma-browserify": "latest",
-		"karma-chrome-launcher": "latest",
-		"karma-commonjs": "latest",
-		"karma-firefox-launcher": "latest",
-		"karma-jasmine": "latest",
-		"karma-jasmine-ajax": "latest",
-		"uglifyify": "latest"
-	},
-
-	"scripts": 
-	{
-		"browserify": "node_modules/.bin/browserify src/main/js/jsbandwidth.js -o jsbandwidth.js  -t [ babelify --presets [ es2015 ] --plugins [ babel-plugin-add-module-exports ] uglifyify]",
-		"babel": "node_modules/.bin/babel src/main/js/jsbandwidth.js -o index.js --presets es2015 --plugins babel-plugin-add-module-exports",
-		"postinstall": "npm run babel",
-		"test": "node_modules/.bin/karma start src/test/karma.conf.js"
-	}
+    "name": "jsbandwidth",
+    "license": "MIT",
+    "version": "1.1.2",
+    "description": "JsBandwidth - the JavaScript net speed test",
+    "author": {
+        "name": "Adrian Ber",
+        "email": "beradrian@yahoo.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/beradrian/jsbandwidth.git"
+    },
+    "main": "index.js",
+    "dependencies": {
+        "extend": "latest",
+        "xhrpromise": "latest",
+        "babel-cli": "latest",
+        "babel-plugin-add-module-exports": "latest",
+        "babel-preset-es2015": "latest"
+    },
+    "devDependencies": {
+        "angular": ">=1.4.7",
+        "angular-mocks": "1.4.7",
+        "jasmine": "latest",
+        "jasmine-ajax": "latest",
+        "jasmine-core": "latest",
+        "js-quantities": "latest",
+        "karma": "latest",
+        "karma-babel-preprocessor": "latest",
+        "karma-browserify": "latest",
+        "karma-chrome-launcher": "latest",
+        "karma-commonjs": "latest",
+        "karma-firefox-launcher": "latest",
+        "karma-jasmine": "latest",
+        "karma-jasmine-ajax": "latest",
+        "uglifyify": "latest"
+    },
+    "scripts": {
+        "browserify": "node_modules/.bin/browserify src/main/js/jsbandwidth.js -o jsbandwidth.js  -t [ babelify --presets [ es2015 ] --plugins [ babel-plugin-add-module-exports ] uglifyify]",
+        "babel": "node_modules/.bin/babel src/main/js/jsbandwidth.js -o index.js --presets es2015 --plugins babel-plugin-add-module-exports",
+        "postinstall": "npm run babel",
+        "test": "node_modules/.bin/karma start src/test/karma.conf.js"
+    }
 }
